@@ -46,6 +46,7 @@ THEN the saved events persist
 
 - Added live clock.
 - Minimalistic amounts of code to allow for quick load.
+- Mobile friendly.
 
 ---
 
