@@ -1,36 +1,38 @@
 var presentHour = moment().hour();
-var inputForms = document.getElementsByTagName("input");
 var saveBtn = $('button');
 var forms = $('input');
 
+// time display and updates colors if time shifts during active use
 window.setInterval(function () {
     $('#currentDay').html(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
-    // presentHour = moment().hour();
-    // renderBackgrounds();
+    renderBackgrounds();
 }, 1000);
 
+// applies color coding to forms
 function renderBackgrounds() {
-    for (var i = 0; i < inputForms.length; i++) {
-        if (parseInt(inputForms[i].id) < presentHour) {
-            inputForms[i].classList.add('past');
-        } else if (parseInt(inputForms[i].id) === presentHour) {
-            inputForms[i].classList.add('present');
+    for (var i = 0; i < forms.length; i++) {
+        if (parseInt(forms[i].id) < presentHour) {
+            forms[i].classList.add('past');
+        } else if (parseInt(forms[i].id) === presentHour) {
+            forms[i].classList.add('present');
         } else {
-            inputForms[i].classList.add('future');
+            forms[i].classList.add('future');
         }
     }
 }
 
-function saveContent(event) {
-    var formID = $(event.target).prev().attr('id');
-    var formContent = $(this).siblings('input').val(); 
-    localStorage.setItem(formID, formContent);
-}
-
+// loads content from local storage
 function renderContent() {
     for (var i = 0; i < forms.length; i++){
     $(forms[i]).val(localStorage.getItem(i+9))
     }
+}
+
+// saves content in sibling form to local storage
+function saveContent(event) {
+    var formID = $(event.target).prev().attr('id');
+    var formContent = $(this).siblings('input').val(); 
+    localStorage.setItem(formID, formContent);
 }
 
 saveBtn.on('click', saveContent);
