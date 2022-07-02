@@ -1,16 +1,13 @@
 var presentHour = moment().hour();
 var inputForms = document.getElementsByTagName("input");
+var saveBtn = $('button');
+var forms = $('input');
 
 window.setInterval(function () {
-    if (presentHour !== moment().hour()) {
-        renderBackgrounds();
-    }
     $('#currentDay').html(moment().format("dddd, MMMM Do YYYY, h:mm:ss a"));
-    presentHour = moment().hour();
+    // presentHour = moment().hour();
+    // renderBackgrounds();
 }, 1000);
-
-
-
 
 function renderBackgrounds() {
     for (var i = 0; i < inputForms.length; i++) {
@@ -24,18 +21,19 @@ function renderBackgrounds() {
     }
 }
 
-//     }
-//         console.log(this.id);
-//         if (this.id < presentHour) {
-//             this.classList.add("past");
-//             console.log ("step 1");
-//         } else if (this.id === presentHour) {
-//             this.classList.add("present");
-//             console.log ("step 2");
-//         } else {
-//             this.classList.add("future");
-//             console.log ("step 3");
-//         }
+function saveContent(event) {
+    var formID = $(event.target).prev().attr('id');
+    var formContent = $(this).siblings('input').val(); 
+    localStorage.setItem(formID, formContent);
+}
 
+function renderContent() {
+    for (var i = 0; i < forms.length; i++){
+    $(forms[i]).val(localStorage.getItem(i+9))
+    }
+}
+
+saveBtn.on('click', saveContent);
 
 renderBackgrounds();
+renderContent();
