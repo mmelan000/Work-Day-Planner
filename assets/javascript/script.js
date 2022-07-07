@@ -1,6 +1,7 @@
 var presentHour = moment().hour();
 var saveBtn = $('button');
 var forms = $('input');
+var clearBtn = $('#clear');
 
 // time display and updates colors if time shifts during active use
 window.setInterval(function () {
@@ -36,6 +37,10 @@ function saveContent(event) {
 }
 
 saveBtn.on('click', saveContent);
+clearBtn.on('click', function() {
+    localStorage.clear();
+    renderContent();
+})
 
 renderBackgrounds();
 renderContent();

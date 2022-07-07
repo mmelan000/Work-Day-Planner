@@ -22,6 +22,7 @@ input {
 button {
   display: flex;
   border: 2px solid black;
+  border-left: 0;
   background-color: #06aed5;
   color: white;
   border-radius: 0px 10px 10px 0px;
@@ -44,20 +45,25 @@ button:hover {
   border-bottom: 10px solid black;
 }
 
+#clear{
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: red;
+}
+
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
+  margin-top: -2px;
 }
 
 .timestamp {
   display: flex;
-  background-color: #D19A66;
-  border: 2px solid black;
+  /* background-color: #D19A66; */
+  border-top: 2px dashed black;
   height: 100%;
   align-items: center;
-  justify-content: center;
-  border-radius: 10px 0px 0px 10px;
+  justify-content: right;
 }
 
 .past {
