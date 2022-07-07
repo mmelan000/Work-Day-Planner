@@ -1,4 +1,4 @@
-# Challenge-04-Web-APIs-Code-Quiz
+# Challenge-05-Web-Third-Party-APIs-Work-Day-Scheduler
 
 The objective of this challenge is to create a app that allows me to utilize bootstrap, jQuery, and moment.js to make a daily planner.
 
@@ -36,9 +36,9 @@ THEN the saved events persist
 
 ## Screenshots
 
-![App Screenshot](./assets/images/app1ss.jpg)
+![App Screenshot](./assets/images/app1.jpg)
 
-![App Screenshot](./assets/images/app2ss.jpg)
+![App Screenshot](./assets/images/app2.jpg)
 
 ---
 
