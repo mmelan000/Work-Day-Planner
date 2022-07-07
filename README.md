@@ -36,9 +36,9 @@ THEN the saved events persist
 
 ## Screenshots
 
-![App Screenshot](./assets/images/app1.jpg)
+![App Screenshot](./assets/images/app1ss.jpg)
 
-![App Screenshot](./assets/images/app2.jpg)
+![App Screenshot](./assets/images/app2ss.jpg)
 
 ---
 
