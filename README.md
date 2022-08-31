@@ -39,7 +39,7 @@ THEN the saved events persist
 
 ## Deployment
 
-[Deployed Website](https://mmelan000.github.io/Work-Day-Scheduler/)
+[Deployed Website](https://mmelan000.github.io/Work-Day-Planner/)
 
 ![App Screenshot](./assets/images/app1ss.jpg)
 
