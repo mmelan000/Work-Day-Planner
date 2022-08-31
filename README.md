@@ -1,4 +1,4 @@
-# Challenge-05-Web-Third-Party-APIs-Work-Day-Scheduler
+# Work-Day-Planner
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)   
 
 ## Description  
