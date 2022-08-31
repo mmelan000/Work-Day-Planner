@@ -1,4 +1,7 @@
 # Challenge-05-Web-Third-Party-APIs-Work-Day-Scheduler
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)   
+
+## Description  
 
 The objective of this challenge is to create a app that allows me to utilize bootstrap, jQuery, and moment.js to make a daily planner.
 
@@ -26,21 +29,21 @@ WHEN I refresh the page
 THEN the saved events persist
 ```
 
----
+## Table of Contents  
+1. [Description](#description)
+2. [Deployment](#deployment)
+3. [Optimizations](#optimizations)
+4. [Contributing](#contributing)  
+5. [Questions](#questions)  
+6. [License](#license)
 
-## Authors
+## Deployment
 
-- [@Michael Melanson](https://github.com/mmelan000)
-
----
-
-## Screenshots
+[Deployed Website](https://mmelan000.github.io/Work-Day-Scheduler/)
 
 ![App Screenshot](./assets/images/app1ss.jpg)
 
 ![App Screenshot](./assets/images/app2ss.jpg)
-
----
 
 ## Optimizations
 
@@ -49,10 +52,16 @@ THEN the saved events persist
 - Mobile friendly.
 - Added clear button.
 
----
+## Contributing  
 
-## Deployment
+Follow best practices for naming conventions, indentation, quality comments, etc.  
 
-https://mmelan000.github.io/Challenge-05-Third-Party-APIs-Work-Day-Scheduler/
+## Questions  
 
----
+If you have any questions, please reach out to me either on Github or by Email.
+  - **Github:** [mmelan000](https://github.com/mmelan000)
+  - **Email:** [m.melanson000@gmail.com](mailto:m.melanson000@gmail.com)
+
+## License  
+
+- [MIT](https://opensource.org/licenses/MIT)
